@@ -1,0 +1,499 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+div.container-simular1 {
+  width: 100%;
+  box-sizing: border-box;
+}
+div.container-simular1 .container-simular2 {
+  padding: 70px 0;
+}
+div.container-simular1 .container-simular2 .container-simular3 {
+  padding: 0 16px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 {
+  margin: 0 auto;
+  border-radius: 20px;
+  max-width: 1300px;
+  box-sizing: border-box;
+  background: #fff;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 h2 {
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  padding: 20px 0px;
+  color: #fff;
+  background: #014079;
+  margin: 0px;
+  letter-spacing: 2px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 {
+  padding: 16px;
+  background: #fff;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 5px 5px 5px #292a2c;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .header-simulacao {
+  display: flex;
+  background: #fff;
+  width: 100%;
+  position: relative;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  z-index: 1;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .header-simulacao .text-simulacao {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  align-self: center;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .header-simulacao .text-simulacao h1 {
+  margin: 0;
+  color: #014079;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .header-simulacao .text-simulacao span {
+  font-weight: 400;
+  font-style: oblique;
+  color: #014079;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .header-simulacao .imagem-simulacao {
+  background-color: #014079;
+  border: 10px solid #014079;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 50px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  fill: #fff;
+  box-shadow: 0 2px 8px 0 rgba(20, 35, 85, 0.15);
+  transition: all 400ms ease;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .header-simulacao .imagem-simulacao:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #014079;
+  fill: #014079;
+  box-sizing: border-box;
+  transform: translateY(-7px);
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .header-simulacao .imagem-simulacao span {
+  padding-top: 14px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao {
+  display: flex;
+  color: #020309;
+  width: 100%;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  z-index: 0;
+  position: relative;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor {
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  z-index: 1;
+  width: 100%;
+  padding: 40px 0px;
+  margin-bottom: 30px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo {
+  background: #0071CE;
+  margin-top: 10px;
+  flex-grow: 1;
+  margin: 20px 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  width: 350px;
+  min-height: 280px;
+  transition: 0.5s;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo h3 {
+  font-size: 26px;
+  border: 3px solid transparent;
+  text-transform: capitalize;
+  background: #020309;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 10px #020309;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin {
+  background: #020309;
+  position: relative;
+  min-width: 330px;
+  height: 45px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: 0.8s;
+  display: flex;
+  align-items: center;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin:hover {
+  border: 2px solid #fff;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin:hover #next {
+  opacity: 1;
+  right: 40px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin:hover #prev {
+  opacity: 1;
+  left: 60px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin .click {
+  transform: translate(-50%) rotate(135deg) scale(1.1);
+  transition: all 1s;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin .click1 {
+  transform: translate(-50%) rotate(135deg);
+  transition: all 1s;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin #next {
+  position: absolute;
+  right: 30%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  z-index: 1;
+  transform: translate(-50%) rotate(135deg);
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin #prev {
+  position: absolute;
+  left: 30%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  z-index: 1;
+  transform: translate(-50%) rotate(315deg);
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin .input-veiculo {
+  margin: 0 30px;
+  padding-top: 5px;
+  text-align: center;
+  background-color: transparent;
+  border: 0 solid transparent;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  outline: none;
+  transition: 0.4s;
+  width: 100%;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin .input-veiculo::-webkit-inner-spin-button, div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin .input-veiculo::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin .input-veiculo::-moz-placeholder {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 24px;
+  font-weight: 700;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin .input-veiculo:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 24px;
+  font-weight: 700;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .box-valor div.montante-veiculo .spin .input-veiculo::placeholder {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 24px;
+  font-weight: 700;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao div.btn {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao div.btn .calcular {
+  font-size: 30px;
+  margin-top: 20px;
+  text-transform: capitalize;
+  color: #fff;
+  border: 8px solid #00A49F;
+  padding: 16px 20px;
+  border-radius: 20px;
+  text-shadow: 0 0 8px #398B72, 0 0 20px #00A49F;
+  box-shadow: inset 0 0 32px #00A49F, 0 0 32px #00A49F;
+  display: flex;
+  position: relative;
+  background-color: #00A49F;
+  transform: translateY(-450px);
+  transition: transform 1.6s;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao div.btn .calcular h1 {
+  margin: 0;
+  margin-right: 100px;
+  font-size: 45px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao div.btn .calcular span.down {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 10px solid #fff;
+  border-left: 10px solid #fff;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+  transform: rotate(-135deg) translateY(0px) translateX(25px);
+  cursor: pointer;
+  transition: transform 1.6s ease-in-out;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao div.btn .calcular::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00A49F;
+  box-shadow: 0 0 50px 10px #00A49F;
+  border-radius: 60px;
+  transition: opacity 100ms linear;
+  opacity: 0;
+  z-index: -1;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao div.btn .calcular:active {
+  padding: 13px 13px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao div.btn .calcular:hover {
+  color: #fff;
+  text-shadow: none;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao div.btn .calcular:hover::after {
+  opacity: 1;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .flip {
+  transform: none;
+  visibility: inherit;
+  opacity: 1;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 .box-simular1 .box-simulacao .up {
+  transform: rotate(45deg) translateY(20px) translateX(5px) !important;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado {
+  display: flex;
+  color: #020309;
+  background: #fff;
+  flex-flow: row wrap;
+  border-bottom: #0071CE 10px solid;
+  justify-content: center;
+  transform: translateY(-460px);
+  z-index: 0;
+  transition: all 1.6s;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .box-entrada {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  color: #fff;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .box-entrada h1 {
+  font-style: italic;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: #020309;
+  text-align: center;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .box-entrada span#entrada {
+  background-color: #fff;
+  color: #020309;
+  font-size: 50px;
+  display: block;
+  padding: 10px 50px;
+  border-radius: 50px;
+  text-shadow: 3px 3px 3px #014079;
+  box-shadow: inset 3px 3px 3px, inset -3px -3px 4px;
+  margin: 15px 0;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao {
+  border-radius: 10px;
+  background: #fff;
+  color: #020309;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  position: relative;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao div {
+  display: flex;
+  flex-grow: 1;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao div .descricao-simulacao {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao div .descricao-simulacao .prestacao-mensal {
+  display: flex;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  text-shadow: 2px 2px 3px #0071CE;
+  font-weight: 700;
+  margin: 15px 10px;
+  padding: 5px;
+  box-shadow: 1px 1px 6px #0071CE, -1px -1px 6px #0071CE;
+  justify-content: center;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao div .descricao-simulacao .prestacao-mensal h5 {
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  flex-grow: 1;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  text-shadow: 2px 2px 3px #0071CE;
+  font-weight: 700;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao div .descricao-simulacao .prestacao-mensal span {
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  text-shadow: none;
+  font-weight: 700;
+  margin: 5px 10px;
+  padding: 5px;
+  box-shadow: 3px 3px 8px #0071CE;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao div .descricao-simulacao .prestacao-mensal span span.prestacao {
+  padding: 0;
+  margin: 0;
+  border-radius: 0px;
+  border: 0px solid #0071CE;
+  border-bottom: 1px dashed #020309;
+  box-shadow: none;
+  font-size: 30px;
+  margin: 0 8px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao div .descricao-simulacao ul {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-top: 20px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao div .descricao-simulacao ul li {
+  border: 2px solid #0071CE;
+  background: #0071CE;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  flex-grow: 1;
+  padding: 10px;
+  margin: 10px 8px;
+  box-shadow: -3px -3px 6px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao div .descricao-simulacao ul li .input-resultado {
+  border-bottom: 1px dashed #020309;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao .pedir-contacto {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao .pedir-contacto button {
+  padding: 20px 60px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #020309;
+  border-radius: 10px 0px;
+  box-shadow: 0 5px 0 #0071CE;
+  transition: background-color 0.3s;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao .pedir-contacto button:hover {
+  color: #fff;
+  background-color: #0071CE;
+  box-shadow: 0 5px 0 #020309;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .resultado-simulacao .pedir-contacto button:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .verde {
+  border-color: #00A49F;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .verde .prestacao-mensal {
+  text-shadow: 2px 2px 3px #00A49F !important;
+  box-shadow: 1px 1px 6px #00A49F, -1px -1px 6px #00A49F !important;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .verde .prestacao-mensal h5 {
+  text-shadow: 2px 2px 3px #00A49F !important;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .verde .prestacao-mensal span {
+  box-shadow: 0px 3px 8px #00A49F !important;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .verde .prestacao-mensal span span.prestacao {
+  box-shadow: none !important;
+}
+div.container-simular1 .container-simular2 .container-simular3 .container-simular4 div.box-resultado .verde ul li {
+  border: 2px solid #00A49F !important;
+  background: #00A49F !important;
+}
+div.container-simular1 .n-transform {
+  transform: none !important;
+}
+div.container-simular1 .n-border {
+  border: hidden !important;
+}/*# sourceMappingURL=simularCompra.css.map */

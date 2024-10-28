@@ -1,0 +1,95 @@
+body {
+  margin: 0px;
+}
+body div.NewCars {
+  background-color: #bde0ff;
+  width: 100%;
+  padding: 16px;
+  justify-content: center;
+}
+body div.NewCars section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1178px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+body div.NewCars section article.left {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+}
+body div.NewCars section article.left span {
+  color: white;
+  background-color: #0071CE;
+  border: 0px transparent solid;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 38px;
+}
+body div.NewCars section article.left #TextoNewCars {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+body div.NewCars section article.right {
+  display: flex;
+  color: #020309;
+  font-size: 14px;
+  font-weight: 700;
+}
+body div.NewCars section article.right section {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid;
+}
+body div.NewCars section article.right img {
+  margin-left: 32px;
+  width: 16px;
+  height: 16px;
+}
+
+/*
+div.NewCars
+{
+    background-color: #bde0ff;
+    width: 100%;
+    padding: 16px;
+    justify-content: center;
+}
+div.NewCars section
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1178px;
+    margin: $margin;
+}
+div #CarrosNovos
+{
+    color: white;
+    background-color:$secondary-color;
+    border: 1px transparent solid;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: $font-family;
+    font-weight: 600;
+}
+div.NewCars section #TextoNewCars
+{
+    font-family: $font-family;
+    margin-left: 16px;
+}
+div.NewCars li
+{
+    list-style: none;
+} *//*# sourceMappingURL=carrosnovos.css.map */

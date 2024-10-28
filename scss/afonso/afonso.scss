@@ -1,0 +1,1264 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+/*******INICIO Variaveis/Mixin*/
+$cor-1: #fff;
+$cor-2: #f6f6f9;
+$cor-3: #C82814;
+$cor-4: #c8c9c9;
+$cor-5: #66676C;
+$cor-6: #020309;
+$cor-7: #0071CE;
+$cor-8: #014079;
+$cor-9: #00A49F;
+$cor-a1: #398B72;
+$cor-a2: rgb(161, 162, 165);
+$cor-a3: rgb(235, 236, 239);
+$cor-a4: #ececef;
+$cor-boxShadow: rgb(0 0 0 / 10%);
+$cor-navShadow: rgb(20 35 85 / 15%);
+
+$main-color: #EBECEF;
+$secondary-color: #0071CE;
+$blue_bar: 2px solid white;
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fontlist: #66676C;
+$margin: 0 auto;
+
+@mixin button-azul {
+    padding: 3px 8px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: $cor-7;
+    border: 0;
+    color: $cor-1;
+    justify-content: center;
+    min-height: 40px;
+    border-radius: 4px;
+    border: 5px solid $cor-7;
+    line-height: 20px;
+    font-size: 14px;
+
+    &:hover {
+        background-color: $cor-1;
+        color: $cor-7;
+    }
+}
+
+/*******FIM Variaveis/Mixin */
+
+/********seletores/atributo globais**********/
+a {
+    text-decoration: none;
+    color: $cor-5;
+}
+
+ul {
+    list-style: none;
+}
+
+.box-shadow {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 $cor-navShadow;
+    display: block;
+    width: 260px;
+}
+
+.relativo {
+    position: relative;
+    width: 100%;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+/*******FIM-------seletores/atributo globais**********/
+
+
+/************************************************************************ */
+/***********INCIO CORPO DO PROJETO AFONSO******************************** */
+/************************************************************************ */
+
+
+/*********************INCIO BARRA DE NAVEGAÇÃO LATERAL SCREEN SMALL****************************** */
+aside.toggle-nav {
+    z-index: 100;
+    background: $cor-1;
+    box-shadow: $cor-navShadow 0px -1px 6px 0px;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 260px;
+    z-index: 0;
+    display: none;
+    overflow-x: hidden;
+
+    ul.menu-toggle {
+        display: flex;
+        flex-flow: row nowrap;
+        border-bottom: 1px solid $cor-a3;
+        overflow: scroll hidden;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+
+        li.lista-toggle {
+            border-right: 1px solid rgb(235, 236, 239);
+            height: 100%;
+
+
+            a.link-toggle {
+                display: inline-block;
+                color: $cor-6;
+                font-size: 12px;
+                padding: 16px;
+
+                &:hover {
+                    color: $cor-7;
+                    fill: $cor-7;
+
+                    svg {
+                        transform: scale(1.1);
+                        transition: transform 350ms linear;
+                    }
+
+
+                }
+
+                article {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                }
+
+                h2 {
+                    margin: 0;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+
+                svg {
+                    width: 40px;
+                }
+
+            }
+
+        }
+    }
+
+    a.link-toggle-low {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $cor-4;
+        color: $cor-6;
+
+        &:hover {
+            cursor: pointer;
+
+            p.paragrafo-toggle:hover {
+                transform: translateX(5px);
+                color: $cor-3;
+                font-weight: 600;
+            }
+        }
+
+        button.button-toggle {
+            background-color: $cor-3;
+            border: 5px solid $cor-3;
+            color: $cor-1;
+            cursor: pointer;
+            box-sizing: border-box;
+            margin: 16px;
+            min-height: 40px;
+            position: relative;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 4px;
+            width: 100%;
+            padding: 10px 30px 8px 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 500ms;
+
+            &:hover {
+                color: $cor-3;
+                background-color: $cor-1;
+            }
+        }
+
+    }
+
+
+
+    div.titulo-toggle {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $cor-4;
+        background-color: $cor-2;
+        font-weight: 600;
+
+    }
+
+    p.paragrafo-toggle {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+        padding: 16px;
+        display: block;
+        width: 100%;
+        transition: all 500ms;
+
+    }
+}
+
+
+/*********************FIM BARRA DE NAVEGAÇÃO LATERAL SCREEN SMALL****************************** */
+
+
+/*********************INICIO CONTAINER PRINCIPAL****************/
+.container-toggle {
+    background: $cor-1;
+    position: relative;
+    transition: transform 300ms ease 0s;
+    transform: translate3d(260px, 0px, 0px);
+}
+
+.container-principal {
+    background: $cor-1;
+    position: relative;
+    transition: transform 300ms;
+    transform: none;
+    z-index: 3;
+}
+
+
+
+
+/******************INICIO BARRA DE NAVEGAÇÃO*****************/
+
+header {
+    background-color: $cor-1;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 24px;
+    align-items: center;
+    box-shadow: $cor-navShadow 0px 2px 6px 0;
+    font-size: 16px;
+    font-size: 100%;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+
+    //Area de toggle button hamburguer
+    div.navbar {
+        display: none;
+    }
+
+    /******************parte lateral esquerda*****************/
+    div.logo {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .standvirtual {
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: relative;
+
+            a {
+                img{
+                   width: 202px;
+                   height: 40px;
+                }
+                span {
+                    color: $cor-6;
+                    font-size: 13px;
+                    margin: 0;
+                    display: block;
+                    text-align: right;
+                    line-height: 11px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .logo-escolha {
+            display: flex;
+            align-items: center;
+
+            p {
+                color: $cor-a1;
+                margin: 0 10px;
+                font-weight: 700;
+                width: 120px;
+                line-height: 16px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    /******************parte lateral direita*****************/
+    nav {
+        ul.menu {
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            font-size: 100%;
+            width: 100%;
+            padding: 13px 0;
+            margin: 0;
+
+            li {
+                &.heart img {
+                    margin-right: 10px;
+                }
+
+                &.login {
+                    div {
+                        display: flex;
+                        align-items: center;
+                        font-weight: 500;
+                        padding: 0 15px;
+
+                        img {
+                            margin-right: 10px;
+                        }
+
+                        a {
+                            padding: 0 5px;
+
+                            &:hover {
+                                color: $cor-7;
+                                transform: none;
+                            }
+                        }
+
+                        span {
+                            color: $cor-5;
+                        }
+                    }
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    padding-right: 15px;
+                    transition: transform 300ms linear;
+
+                    span.novo {
+                        background-color: $cor-3;
+                        border-radius: 4px;
+                        font-size: 10px;
+                        color: $cor-1;
+                        font-weight: 700;
+                        padding: 0 5px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        margin-right: 15px;
+                        box-sizing: border-box;
+
+                    }
+
+                    &:hover {
+                        transform: translateY(-3px);
+
+                    }
+                }
+
+                &.li-button button {
+                    padding: 3px 8px;
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    font-weight: 700;
+                    background-color: $cor-7;
+                    border: 0;
+                    color: $cor-1;
+                    justify-content: center;
+                    min-height: 40px;
+                    border-radius: 4px;
+                    border: 5px solid $cor-7;
+                    line-height: 20px;
+                    font-size: 14px;
+
+                    &:hover {
+                        background-color: $cor-1;
+                        color: $cor-7;
+                    }
+
+                    svg {
+                        margin-right: 8px;
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/******************FIM BARRA DE NAVEGAÇÃO*****************/
+
+.button-azul {
+    text-transform: uppercase;
+    @include button-azul()
+}
+
+//inicio navegação de media query de width 720px
+nav.navbar2 {
+    display: none;
+
+    div.box-navbar2 {
+        display: flex;
+        flex-flow: row nowrap;
+        border-bottom: 1px solid $cor-2;
+        max-width: 100%;
+        overflow: scroll hidden;
+        align-items: stretch;
+        justify-content: flex-start;
+
+        a.link-navbar2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: none;
+            border: 0px;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            fill: $cor-a2;
+            color: $cor-a2 ;
+            padding: 8px 16px;
+
+            &:hover {
+                fill: $cor-7;
+                color: $cor-7;
+                border-bottom: 5px solid $cor-7;
+                cursor: pointer;
+            }
+
+            i.icon-navbar2 {
+                width: 20px;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+/******************INICIO ANUNCIOS CARROS NOVO */
+
+div.NewCars {
+    box-sizing: border-box;
+    background-color: #bde0ff;
+    width: 100%;
+    padding: 16px;
+    justify-content: center;
+    position: sticky;
+    top: 65.95px;
+    z-index: 4;
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1178px;
+        margin: $margin;
+        font-family: $font-family;
+        list-style: none;
+
+        article.left {
+            display: flex;
+            flex-direction: row;
+            font-size: 16px;
+
+            span {
+                color: white;
+                background-color: $secondary-color;
+                border: 0px transparent solid;
+                border-radius: 4px;
+                padding: 8px;
+                font-size: 18px;
+                font-style: italic;
+                font-weight: 600;
+                line-height: 38px;
+            }
+
+            #TextoNewCars {
+                display: flex;
+                align-items: center;
+                margin-left: 16px;
+            }
+        }
+
+        article.right {
+            display: flex;
+            color: $cor-6;
+            font-size: 14px;
+            font-weight: 700;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid;
+            }
+
+            img {
+                margin-left: 32px;
+                width: 16px;
+                height: 16px;
+            }
+
+        }
+    }
+}
+
+/******************FIM ANUNCIOS CARROS NOVO */
+
+/******************INICIO LAYOUT CENTRAL ****************/
+div.carros {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto repeat(2, 581px) auto;
+    grid-template-rows: auto 1fr repeat(3, auto);
+    grid-gap: 24px 16px;
+
+    /**INICIO--------------zona centra parte superior /IMAGEM/ */
+    .item-imagem {
+        background: url(/images/capas/range\ rover_fundo.jpg) center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-height: 100%;
+        grid-column: 1/span 4;
+        grid-row: 1/span 3;
+        text-align: center;
+    }
+
+    /**INICIO--------------zona centra parte superior /FORMULARIO/*/
+    .item-formulario {
+        background: $cor-1;
+        box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+        max-height: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        box-sizing: border-box;
+        margin: auto;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 16px;
+
+        /**INCIO  parte do menu de topo */
+        ul.opcao {
+            display: flex;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+            li {
+                &.flex-grow {
+                    flex-grow: 1;
+                    position: relative;
+
+                    span:hover {
+                        color: $cor-7;
+                        fill: $cor-7
+                    }
+
+                    /**ul lista 1 span */
+                    .lista1-span {
+                        display: flex;
+                        position: relative;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #f8f8fd;
+                        font-size: 0.75rem;
+                        font-weight: 600;
+
+                        svg {
+                            width: 32px;
+                            height: 32px;
+                            margin-bottom: 1px;
+                        }
+
+                        &::after {
+                            display: block;
+                            content: " ";
+                            position: absolute;
+                            width: 1px;
+                            height: 100%;
+                            top: 0;
+                            right: 0;
+                            background: linear-gradient($cor-2, $cor-4);
+                        }
+
+                    }
+                }
+
+                &.lista4:hover {
+                    /**ul.veiculos lista 4 span  */
+                    border: 1px solid $cor-2;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px 0;
+                }
+
+                ul.veiculo {
+                    position: absolute;
+                    right: 0px;
+                    padding-left: 0;
+                    display: none;
+                    width: 265px;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    background-color: $cor-1;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px 0;
+                    border: 1px solid $cor-4;
+                    box-sizing: border-box;
+                    z-index: 6;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-color: $cor-1;
+                        width: 100%;
+                        height: 5px;
+                        top: -2px;
+                    }
+                }
+
+                .lista4-width {
+                    width: 100%;
+                }
+            }
+
+            .lista4-link {
+                border-bottom: 1px solid $cor-a4;
+                display: inline-block;
+                padding: 16px 28px;
+                text-align: right;
+                color: #000;
+                font-size: 0.75rem;
+                font-weight: 600;
+                width: 100%;
+                box-sizing: border-box;
+
+                &:hover {
+                    background: $cor-8;
+                    color: $cor-2;
+                    transition: color 0.5s ease, background-color 0.5s ease;
+                }
+            }
+        }
+
+        a {
+            position: relative;
+        }
+    }
+}
+
+/** FIM parte do menu de topo */
+
+
+/** INICIO zona de pesquisa */
+.corpo-pesquisa {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    padding: 16px;
+
+    .titulo {
+        font-size: 16px;
+        line-height: 42px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin: 0;
+        color: #020309;
+        margin-bottom: 16px;
+        line-height: unset;
+    }
+
+    /**FORMUMARIO */
+    .box-form {
+        display: flex;
+        flex-grow: 2;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box-procura {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .segmento-padrao {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-bottom: 16px;
+        width: calc(50% - 12px);
+
+        &:nth-of-type(odd) {
+            margin-right: 24px;
+        }
+    }
+
+    .form-p_segmento {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        color: #020309;
+        margin: 0;
+        margin-bottom: 4px;
+    }
+
+    .box-input {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        border-left-width: 0;
+        border-right-width: 0;
+        border: 2px solid #ebecef;
+        background-color: #EBECEF;
+        padding: 0;
+        border-radius: 4px;
+
+        input {
+            width: 100%;
+            height: 44px;
+
+            &:not(:focus) {
+                cursor: pointer;
+            }
+
+            &.input-item {
+                background: transparent;
+                border: 0;
+                caret-color: #020309;
+                color: #66676C;
+                flex: 1;
+                font-size: 16px;
+                outline: 0;
+                line-height: 20px;
+                padding-left: 16px;
+            }
+
+            &[disabled] {
+                cursor: not-allowed;
+            }
+        }
+
+        .form-button {
+            background: transparent;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            padding: 0 16px;
+            border: 0;
+            height: 44px;
+
+            .estilo {
+                height: 24px;
+                width: 24px;
+                color: #020309;
+                transform: rotate(360deg);
+                transition: transform 0.2s ease;
+            }
+        }
+    }
+
+    .modelo {
+        background-color: #F7F8FA;
+        border-color: #F7F8FA;
+
+        .form-button svg.estilo {
+            color: #66676C;
+        }
+    }
+
+    /** MARGEM DA ZONA DE PRECO E TODOS QUE TENHAM 2 BOX-INPUT INCLUIDOS*/
+    .flex>:first-of-type {
+        margin-right: 8px;
+    }
+
+    /**FIM FORMULARIO */
+    /**ZONA DE ANUCIO */
+    .container-anuncio {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        align-self: flex-end;
+        gap: 20px;
+
+        button {
+            width: 100%;
+        }
+
+        .anuncio_button {
+            align-items: center;
+            border-radius: 4px;
+            border: 5px solid #C82814;
+            box-sizing: border-box;
+            background: #C82814;
+            color: #ffffff;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            min-height: 40px;
+            position: relative;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            padding: 10px 30px 8px 30px;
+
+            &:hover {
+                background-color: transparent;
+                color: #C82814;
+            }
+        }
+
+        .pesquisa_avançada_button {
+            align-items: center;
+            border: 0;
+            border-radius: 0;
+            box-sizing: border-box;
+            color: #020309;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            background: transparent;
+            font-weight: 700;
+            margin: 0;
+            min-height: 40px;
+            position: relative;
+            font-size: 16px;
+            line-height: 18px;
+            border: solid 2px #ffffff;
+            border-radius: 4px;
+            padding: 12px 43px;
+        }
+    }
+}
+
+/**fim zona de pesquisa  */
+
+/**FIM-----------zona central parte superior /FORMULARIO/*/
+
+
+
+/**zona centra parte lateral esquerda /OPORTUNIDADES/*/
+.item-oportunidade {
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 4;
+
+    a {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        img {
+            box-sizing: border-box;
+            border-radius: 8px 8px 0 0;
+            object-fit: cover;
+            flex-basis: 285px;
+            height: auto;
+        }
+
+        section.descricao {
+            position: relative;
+            padding: 8px;
+        }
+
+        h2 {
+            position: absolute;
+            top: -25px;
+            margin: 0;
+            background-color: #00A49F;
+            color: #fff;
+            display: inline;
+            line-height: 22px;
+            text-align: center;
+            left: 16px;
+            border-radius: 4px;
+            font-size: 22px;
+            font-weight: 600;
+            padding: 10px 16px;
+        }
+    }
+
+}
+
+/*aplicado .item-oportunidade a section.descricao e no item 4 e 5*/
+section.carater {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+
+    h3 {
+        margin: 5px 0px 5px 0px;
+        color: #020309;
+    }
+
+    ul {
+        display: flex;
+        padding: 0;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+
+        li {
+            padding-right: 16px;
+            position: relative;
+        }
+    }
+
+    .preco {
+        .valor {
+            color: #C82814;
+            font-weight: 700;
+            font-size: 22px;
+            margin-right: 5px;
+        }
+
+        .moeda {
+            font-size: 12px;
+            font-weight: 700;
+            color: #C82814;
+        }
+    }
+}
+
+/*----------FIM--------------zona centra parte lateral esquerda /OPORTUNIDADES/*/
+
+
+/*----------INICIO-------------zona centra parte lateral direita /ANUNCIO EM DESTAQUE/*/
+.item-4 {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    grid-column: 3;
+    grid-row: 4;
+    vertical-align: baseline;
+
+    .anuncio {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding-left: 0px;
+
+        a {
+            color: #0071CE;
+            text-decoration: underline;
+            font-size: 18px;
+            display: block;
+            height: 50px;
+            padding-right: 10px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    h2 {
+        display: block;
+        font-size: 22px;
+        font-size: 700;
+        color: #020309;
+        box-sizing: border-box;
+        margin-top: 0;
+    }
+
+    .destaque {
+        display: grid;
+        padding: 0;
+        width: 100%;
+        grid-template-columns: repeat(2, 290px);
+        grid-template-rows: 1fr 1fr;
+        box-sizing: border-box;
+        gap: 16px;
+
+        a {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            object-fit: cover;
+            height: 208px;
+            box-sizing: border-box;
+            border-radius: 8px 8px 0 0;
+        }
+    }
+}
+
+/*---------FIM-------------zona centra parte lateral direita /ANUNCIO EM DESTAQUE/*/
+
+/*---------INICIO------------zona centra parte RODAPE ESQUERDA */
+.item-5 {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 24px;
+    grid-column: 2/4;
+    display: flex;
+    grid-row: 6;
+    gap: 10px;
+
+    div {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+        a {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                height: 131px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 8px 8px 0 0;
+            }
+        }
+    }
+}
+
+/*---------FIM-----------zona centra parte RODAPE  */
+
+/******************FIM  LAYOUT CENTRAL ****************/
+
+/******************TAG DIV PARA OPACIDADE QUANDO ATIVADO O BURGER  */
+.opacidade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $cor-1;
+    opacity: 0.6;
+    z-index: 1000;
+
+}
+
+/*********************FIM CONTAINER PRINCIPAL****************/
+
+/******************INICIO SITE RESPONSIVO*****************/
+
+@media screen and (max-width:1200px) {
+
+    /** inicio Zona de barra de navegação  */
+    .carros .item-imagem,
+    header div.logo div.standvirtual a span,
+    nav ul li,
+    header div.logo div.logo-escolha {
+        display: none;
+    }
+
+    nav ul li.li-button {
+        display: flex;
+    }
+
+    aside.toggle-nav {
+        display: block;
+    }
+
+    header div.logo div div.navbar {
+        display: flex;
+        position: relative;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    header div.logo div div.navbar label {
+        display: block;
+        font-size: 35px;
+        color: #0071CE;
+        padding: 0 10px 10px 0;
+        box-sizing: border-box;
+    }
+
+    div.navbar input#toggle+nav ul li {
+        display: flex;
+    }
+
+    .nav ul.menu {
+        text-align: left;
+        margin-left: 30px;
+        margin-top: -30px;
+
+    }
+
+    input[type=checked]:hover {
+        background-color: #020309;
+    }
+
+    /**fim Zona de barra de navegação  */
+    div.carros {
+        /** 
+        display:grid;
+        grid-template-columns:auto 1fr auto;
+        width: 100%;
+        */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-formulario,
+    .item-oportunidade,
+    .item-4,
+    .item-5 {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .item-oportunidade img {
+        flex-basis: 243px;
+        min-height: 243px;
+
+    }
+
+    .item-4 section.destaque {
+        display: flex;
+    }
+
+    .item-4 section.destaque div {
+        margin-bottom: 16px;
+        width: 312px;
+    }
+
+    .item-4 section.destaque,
+    .item-5 {
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .item-5 div {
+        margin-bottom: 16px;
+        width: 200px;
+    }
+
+    .corpo-pesquisa div.box-procura {
+        flex-direction: column;
+    }
+
+    .corpo-pesquisa div.segmento-padrao {
+        width: 100%;
+    }
+
+    .container-anuncio {
+        flex-direction: column;
+    }
+
+    .container-anuncio .anuncio_button {
+        order: -1;
+    }
+
+    //ZONA DE CREDITO AUTOMOVEL
+    div.btn {
+
+        display: none !important;
+        
+        .calcular{
+            transform: none !important;
+        }
+
+    }
+    div.box-resultado {
+        transform: none !important;
+        opacity: 1 !important;
+        border: 0 !important;
+        .resultado-simulacao {
+            flex-direction: column-reverse !important;
+            div {
+                display: flex;
+                flex-flow: row wrap;
+                flex-grow: 1;
+                .descricao-simulacao{
+                    border-bottom: 10px solid $cor-7;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 720px) {
+    nav.navbar2 {
+        display: flex;
+    }
+    .standvirtual {
+        a {
+            img{
+                width:170px !important;
+                 
+            }
+        }
+    }
+
+    ul.opcao {
+        background: url(/images/capas/mercedez_fundo_mediaQueries.jpg) center center no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 150px;
+
+        li {
+            display: none;
+
+        }
+    }
+
+}
+
+/******************FIM SITE RESPONSIVO*****************/
+
+/************************************************************************ */
+/**************FIM CORPO DO PROJETO AFONSO******************************* */
+/************************************************************************ */

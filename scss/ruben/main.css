@@ -1,0 +1,301 @@
+body {
+  margin: 0px;
+}
+body div.inferior {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1180px;
+  z-index: 2000;
+}
+body div.inferior div.outsidetestdrive {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+  width: 100%;
+}
+body div.inferior div.outsidetestdrive div.redirectpages {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+body div.inferior div.outsidetestdrive div.redirectpages span {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 50%;
+}
+body div.inferior div.outsidetestdrive div.redirectpages span a {
+  font-weight: 500;
+  color: rgb(217, 39, 39);
+  margin: 0px 5px;
+}
+body div.inferior div.outsidetestdrive div.testdrive {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  -o-object-fit: cover;
+     object-fit: cover;
+  justify-content: center;
+  width: 30%;
+}
+body div.inferior div.outsidetestdrive div.testdrive .insidetestdrive {
+  cursor: pointer;
+  padding: 0px;
+}
+body div.inferior div.images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  overflow: auto;
+}
+body div.inferior div.images img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 15px;
+  width: 33.3%;
+  max-height: 339px;
+  min-height: 200px;
+  min-width: 215px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body div.inferior div.upbluebar {
+  padding: 0px 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  justify-content: center;
+}
+body div.inferior div.upbluebar section {
+  display: flex;
+  flex-wrap: wrap;
+}
+body div.inferior div.upbluebar h4 {
+  margin: 0;
+  line-height: 26px;
+}
+body div.inferior div.upbluebar ul {
+  padding: 0px 0px 16px 0px;
+  flex-wrap: wrap;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  line-height: 28px;
+}
+body div.inferior div.upbluebar li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  margin-right: 16px;
+  font-weight: 700;
+  color: #66676C;
+  list-style: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+body div.inferior div.upbluebar li:hover {
+  text-decoration: none;
+}
+body div.bluebar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0071CE;
+  padding: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  line-height: 86px;
+}
+body div.bluebar #standbar {
+  margin-right: 24px;
+  line-height: 16px;
+  color: #fff;
+}
+body div.bluebar #borderbar {
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px 46px;
+  margin: 7px 0px;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+body div.bluebar #borderbar:hover {
+  border: 5px solid white;
+  padding: 9px 43px;
+}
+body footer {
+  display: flex;
+  padding: 48px 0px;
+  margin: 0px;
+  background-color: #EBECEF;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+body footer article {
+  display: flex;
+  width: 100%;
+  justify-items: center;
+}
+body footer article section.outside {
+  width: 100%;
+  padding: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+body footer article section.outside section.inside {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+  width: 20%;
+}
+body footer article section.outside section.inside ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  cursor: auto;
+}
+body footer article section.outside section.inside ul .linea {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  cursor: auto;
+  line-height: 22px;
+}
+body footer article section.outside section.inside ul span {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+body footer article section.outside section.inside ul li {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 16px;
+  align-items: center;
+  cursor: pointer;
+}
+body footer article section.outside section.inside ul li #mtop {
+  margin-top: 48px;
+}
+body footer article section.outside section.inside ul li #margin-bottom0px {
+  margin-bottom: 0px;
+}
+body footer article section.outside section.inside ul #mtop {
+  margin-top: 48px;
+}
+body footer article section.outside section.inside .padding-left8px {
+  padding-left: 8px;
+}
+body footer article section.outside section.inside img {
+  width: 24px;
+  border-radius: 4px;
+  cursor: default;
+}
+body footer article section.outside section.inside #consumidor {
+  height: 51px;
+  width: 31px;
+}
+body .downfooter {
+  width: 100%;
+}
+body .downfooter #greybar {
+  width: 100%;
+  background-color: #ebecef;
+}
+body .downfooter #greybar hr {
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  opacity: 0.3;
+  color: #dcdde0;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+body .downfooter .experimenta {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+body .downfooter .stores {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+body .downfooter .stores .appstore {
+  height: 38px;
+}
+body .downfooter .stores img {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  body div.inferior div.outsidetestdrive {
+    flex-direction: column;
+  }
+  body div.inferior div.outsidetestdrive div.redirectpages {
+    width: 100%;
+  }
+  body div.inferior div.outsidetestdrive div.redirectpages span {
+    margin: 5px 0px;
+    justify-content: center;
+  }
+  body div.inferior div.outsidetestdrive div.testdrive {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 575px) {
+  body footer article section.outside section.inside {
+    width: 100%;
+  }
+  div.upbluebar ul {
+    flex-wrap: wrap;
+  }
+  div.upbluebar li {
+    flex-shrink: 0;
+  }
+  div.bluebar {
+    flex-direction: column;
+  }
+  div.bluebar a#standbar {
+    margin-right: 0px;
+    padding-bottom: 16px;
+  }
+  div.bluebar #borderbar {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  footer {
+    align-content: center;
+    flex-direction: column;
+  }
+  footer article section.outside {
+    max-width: 575px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer article section.outside section.inside {
+    padding: 16px 0px;
+  }
+}/*# sourceMappingURL=main.css.map */
