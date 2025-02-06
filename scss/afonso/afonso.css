@@ -442,7 +442,7 @@ div.carros {
   /**INICIO--------------zona centra parte superior /FORMULARIO/*/
 }
 div.carros .item-imagem {
-  background: url(images\capas\range_rover_fundo.jpg) center center;
+  background: url(../../images/capas/range_rover_fundo.jpg) center center;
   background-repeat: no-repeat;
   width: 100%;
   max-height: 100%;
