@@ -44,10 +44,12 @@ O foco foi aplicar os conhecimentos teóricos adquiridos ao longo das aulas, em 
 ## 📸 Capturas de ecrã
 
 ### Página de pesquisa de veículos
-(Adicionar imagem aqui se quiseres)
+<img width="705" height="719" alt="Captura de ecrã 2025-07-31 142649" src="https://github.com/user-attachments/assets/dae70bf2-0bde-48c1-ba03-2fa30840b41d" />
+
 
 ### Simulador de crédito automóvel
-(Adicionar imagem aqui)
+<img width="708" height="706" alt="Captura de ecrã 2025-07-31 142727" src="https://github.com/user-attachments/assets/50fd8751-50ca-4273-a328-4c296e5c5b03" />
+
 
 ---
 
